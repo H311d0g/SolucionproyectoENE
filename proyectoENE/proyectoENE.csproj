@@ -70,6 +70,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PRUEBAENEDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PRUEBAENEDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PRUEBAENEDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +104,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PRUEBAENEDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="Registro Requerimiento.cs">
       <SubType>Form</SubType>
@@ -154,6 +169,17 @@
     </None>
     <None Include="PRUEBAENEDataSet1.xss">
       <DependentUpon>PRUEBAENEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet10.xsc">
+      <DependentUpon>PRUEBAENEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet10.xss">
+      <DependentUpon>PRUEBAENEDataSet10.xsd</DependentUpon>
     </None>
     <None Include="PRUEBAENEDataSet2.xsc">
       <DependentUpon>PRUEBAENEDataSet2.xsd</DependentUpon>
@@ -220,6 +246,28 @@
     </None>
     <None Include="PRUEBAENEDataSet7.xss">
       <DependentUpon>PRUEBAENEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet8.xsc">
+      <DependentUpon>PRUEBAENEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet8.xss">
+      <DependentUpon>PRUEBAENEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet9.xsc">
+      <DependentUpon>PRUEBAENEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet9.xss">
+      <DependentUpon>PRUEBAENEDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

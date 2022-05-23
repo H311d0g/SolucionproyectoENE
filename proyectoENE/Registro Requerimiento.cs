@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataLayer;
 using System.Data.SqlClient;
+using BusinessLayer;
 
 namespace proyectoENE
 {
@@ -28,6 +29,8 @@ namespace proyectoENE
 
         private void Registro_Requerimiento_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'pRUEBAENEDataSet8.requerimiento' table. You can move, or remove it, as needed.
+            this.requerimientoTableAdapter2.Fill(this.pRUEBAENEDataSet8.requerimiento);
             // TODO: This line of code loads data into the 'pRUEBAENEDataSet1.usuario' table. You can move, or remove it, as needed.
             this.usuarioTableAdapter1.Fill(this.pRUEBAENEDataSet1.usuario);
             // TODO: This line of code loads data into the 'pRUEBAENEDataSet7.requerimientos_form' table. You can move, or remove it, as needed.
@@ -45,22 +48,40 @@ namespace proyectoENE
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox3.SelectedIndex == 0)
-            {
-                MessageBox.Show("El requerimiento fue ingresado, el plazo para resolverlo es de 3 días");
-                if (comboBox3.SelectedIndex == 1)
-                {
-                    MessageBox.Show("El requerimiento fue ingresado, el plazo para resolverlo es de 4 días");
-                    if (comboBox3.SelectedIndex == 2)
-                    {
-                        MessageBox.Show("El requerimiento fue ingresado, el plazo para resolverlo es de 5 días");
-                    }
-                }
-            }
-            comboBox1.SelectedValue.ToString();
             SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-M51EKPM\SQLEXPRESS; Initial Catalog= PRUEBAENE; User ID= sa; Password= h4ckth1s");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO requerimiento (tipo_req, responsable_req, descripcion, prioridad, dias_plazo VALUES ())");
+            string req_sort = comboBox1.Text;
+            string given_to = comboBox2.Text;
+            string describe = textBox1.Text;
+            string priority = comboBox3.Text;
+            if (comboBox3.SelectedIndex== 0)
+            {
+                string Sql = "INSERT INTO requerimiento(tipo_req, responsable_req, descripcion, prioridad, dias_plazo) VALUES ('" + req_sort + "', '" + given_to + "', '" + describe + "', '" + priority + "', "+3+")";
+                SqlCommand fcmd = new SqlCommand(Sql, conn);
+                fcmd.ExecuteNonQuery();
+                MessageBox.Show("El requerimiento fue ingresado, el plazo es 3 días");
+            }
+            else
+            {
+                if (comboBox3.SelectedIndex == 1)
+                {
+                    string Sql = "INSERT INTO requerimiento(tipo_req, responsable_req, descripcion, prioridad, dias_plazo) VALUES ('" + req_sort + "', '" + given_to + "', '" + describe + "', '" + priority + "', " + 4 + ")";
+                    SqlCommand fcmd = new SqlCommand(Sql, conn);
+                    fcmd.ExecuteNonQuery();
+                    MessageBox.Show("El requerimiento fue ingresado, el plazo es 4 días");
+                }
+                else
+                {
+                    if (comboBox3.SelectedIndex == 2)
+                    {
+                        string Sql = "INSERT INTO requerimiento(tipo_req, responsable_req, descripcion, prioridad, dias_plazo) VALUES ('" + req_sort + "', '" + given_to + "', '" + describe + "', '" + priority + "', " + 5 + ")";
+                        SqlCommand fcmd = new SqlCommand(Sql, conn);
+                        fcmd.ExecuteNonQuery();
+                        MessageBox.Show("El requerimiento fue ingresado, el plazo es 5 días");
+                    }
+                }               
+            }
+            conn.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

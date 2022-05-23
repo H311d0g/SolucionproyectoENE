@@ -38,13 +38,20 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.requerimientosformBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pRUEBAENEDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pRUEBAENEDataSet6 = new proyectoENE.PRUEBAENEDataSet6();
             this.requerimientoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pRUEBAENEDataSet = new proyectoENE.PRUEBAENEDataSet();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.usuarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pRUEBAENEDataSet1 = new proyectoENE.PRUEBAENEDataSet1();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pRUEBAENEDataSet2 = new proyectoENE.PRUEBAENEDataSet2();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.requerimientosformBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.pRUEBAENEDataSet7 = new proyectoENE.PRUEBAENEDataSet7();
             this.requerimientoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pRUEBAENEDataSet3 = new proyectoENE.PRUEBAENEDataSet3();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,31 +60,31 @@
             this.requerimientoTableAdapter = new proyectoENE.PRUEBAENEDataSetTableAdapters.requerimientoTableAdapter();
             this.usuarioTableAdapter = new proyectoENE.PRUEBAENEDataSet2TableAdapters.usuarioTableAdapter();
             this.requerimientoTableAdapter1 = new proyectoENE.PRUEBAENEDataSet3TableAdapters.requerimientoTableAdapter();
-            this.pRUEBAENEDataSet6 = new proyectoENE.PRUEBAENEDataSet6();
-            this.pRUEBAENEDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.requerimientosformBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requerimientos_formTableAdapter = new proyectoENE.PRUEBAENEDataSet6TableAdapters.requerimientos_formTableAdapter();
-            this.pRUEBAENEDataSet7 = new proyectoENE.PRUEBAENEDataSet7();
             this.requerimientosformBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.requerimientos_formTableAdapter1 = new proyectoENE.PRUEBAENEDataSet7TableAdapters.requerimientos_formTableAdapter();
-            this.pRUEBAENEDataSet1 = new proyectoENE.PRUEBAENEDataSet1();
-            this.usuarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.usuarioTableAdapter1 = new proyectoENE.PRUEBAENEDataSet1TableAdapters.usuarioTableAdapter();
-            this.requerimientosformBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.pRUEBAENEDataSet8 = new proyectoENE.PRUEBAENEDataSet8();
+            this.requerimientoBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.requerimientoTableAdapter2 = new proyectoENE.PRUEBAENEDataSet8TableAdapters.requerimientoTableAdapter();
+            this.requerimientosformBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requerimientoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requerimientoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientoBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -162,13 +169,28 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.requerimientosformBindingSource;
+            this.comboBox1.DataSource = this.requerimientosformBindingSource3;
             this.comboBox1.DisplayMember = "req";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(236, 79);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(224, 24);
             this.comboBox1.TabIndex = 8;
+            // 
+            // requerimientosformBindingSource
+            // 
+            this.requerimientosformBindingSource.DataMember = "requerimientos_form";
+            this.requerimientosformBindingSource.DataSource = this.pRUEBAENEDataSet6BindingSource;
+            // 
+            // pRUEBAENEDataSet6BindingSource
+            // 
+            this.pRUEBAENEDataSet6BindingSource.DataSource = this.pRUEBAENEDataSet6;
+            this.pRUEBAENEDataSet6BindingSource.Position = 0;
+            // 
+            // pRUEBAENEDataSet6
+            // 
+            this.pRUEBAENEDataSet6.DataSetName = "PRUEBAENEDataSet6";
+            this.pRUEBAENEDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // requerimientoBindingSource
             // 
@@ -189,6 +211,16 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(224, 24);
             this.comboBox2.TabIndex = 9;
+            // 
+            // usuarioBindingSource1
+            // 
+            this.usuarioBindingSource1.DataMember = "usuario";
+            this.usuarioBindingSource1.DataSource = this.pRUEBAENEDataSet1;
+            // 
+            // pRUEBAENEDataSet1
+            // 
+            this.pRUEBAENEDataSet1.DataSetName = "PRUEBAENEDataSet1";
+            this.pRUEBAENEDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // usuarioBindingSource
             // 
@@ -218,6 +250,16 @@
             this.comboBox3.Size = new System.Drawing.Size(266, 24);
             this.comboBox3.TabIndex = 11;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // requerimientosformBindingSource2
+            // 
+            this.requerimientosformBindingSource2.DataMember = "requerimientos_form";
+            this.requerimientosformBindingSource2.DataSource = this.pRUEBAENEDataSet7;
+            // 
+            // pRUEBAENEDataSet7
+            // 
+            this.pRUEBAENEDataSet7.DataSetName = "PRUEBAENEDataSet7";
+            this.pRUEBAENEDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // requerimientoBindingSource1
             // 
@@ -274,29 +316,9 @@
             // 
             this.requerimientoTableAdapter1.ClearBeforeFill = true;
             // 
-            // pRUEBAENEDataSet6
-            // 
-            this.pRUEBAENEDataSet6.DataSetName = "PRUEBAENEDataSet6";
-            this.pRUEBAENEDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pRUEBAENEDataSet6BindingSource
-            // 
-            this.pRUEBAENEDataSet6BindingSource.DataSource = this.pRUEBAENEDataSet6;
-            this.pRUEBAENEDataSet6BindingSource.Position = 0;
-            // 
-            // requerimientosformBindingSource
-            // 
-            this.requerimientosformBindingSource.DataMember = "requerimientos_form";
-            this.requerimientosformBindingSource.DataSource = this.pRUEBAENEDataSet6BindingSource;
-            // 
             // requerimientos_formTableAdapter
             // 
             this.requerimientos_formTableAdapter.ClearBeforeFill = true;
-            // 
-            // pRUEBAENEDataSet7
-            // 
-            this.pRUEBAENEDataSet7.DataSetName = "PRUEBAENEDataSet7";
-            this.pRUEBAENEDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // requerimientosformBindingSource1
             // 
@@ -307,24 +329,28 @@
             // 
             this.requerimientos_formTableAdapter1.ClearBeforeFill = true;
             // 
-            // pRUEBAENEDataSet1
-            // 
-            this.pRUEBAENEDataSet1.DataSetName = "PRUEBAENEDataSet1";
-            this.pRUEBAENEDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usuarioBindingSource1
-            // 
-            this.usuarioBindingSource1.DataMember = "usuario";
-            this.usuarioBindingSource1.DataSource = this.pRUEBAENEDataSet1;
-            // 
             // usuarioTableAdapter1
             // 
             this.usuarioTableAdapter1.ClearBeforeFill = true;
             // 
-            // requerimientosformBindingSource2
+            // pRUEBAENEDataSet8
             // 
-            this.requerimientosformBindingSource2.DataMember = "requerimientos_form";
-            this.requerimientosformBindingSource2.DataSource = this.pRUEBAENEDataSet7;
+            this.pRUEBAENEDataSet8.DataSetName = "PRUEBAENEDataSet8";
+            this.pRUEBAENEDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // requerimientoBindingSource2
+            // 
+            this.requerimientoBindingSource2.DataMember = "requerimiento";
+            this.requerimientoBindingSource2.DataSource = this.pRUEBAENEDataSet8;
+            // 
+            // requerimientoTableAdapter2
+            // 
+            this.requerimientoTableAdapter2.ClearBeforeFill = true;
+            // 
+            // requerimientosformBindingSource3
+            // 
+            this.requerimientosformBindingSource3.DataMember = "requerimientos_form";
+            this.requerimientosformBindingSource3.DataSource = this.pRUEBAENEDataSet6BindingSource;
             // 
             // Registro_Requerimiento
             // 
@@ -349,20 +375,23 @@
             this.Name = "Registro_Requerimiento";
             this.Text = "Registro_requerimiento";
             this.Load += new System.EventHandler(this.Registro_Requerimiento_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requerimientoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requerimientoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet6BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBAENEDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientoBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requerimientosformBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,5 +434,9 @@
         private System.Windows.Forms.BindingSource usuarioBindingSource1;
         private PRUEBAENEDataSet1TableAdapters.usuarioTableAdapter usuarioTableAdapter1;
         private System.Windows.Forms.BindingSource requerimientosformBindingSource2;
+        private PRUEBAENEDataSet8 pRUEBAENEDataSet8;
+        private System.Windows.Forms.BindingSource requerimientoBindingSource2;
+        private PRUEBAENEDataSet8TableAdapters.requerimientoTableAdapter requerimientoTableAdapter2;
+        private System.Windows.Forms.BindingSource requerimientosformBindingSource3;
     }
 }
