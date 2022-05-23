@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PRUEBAENEDataSet" targetNamespace="http://tempuri.org/PRUEBAENEDataSet.xsd" xmlns:mstns="http://tempuri.org/PRUEBAENEDataSet.xsd" xmlns="http://tempuri.org/PRUEBAENEDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PRUEBAENEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PRUEBAENEConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.proyectoENE.Properties.Settings.GlobalReference.Default.PRUEBAENEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="requerimientoTableAdapter" GeneratorDataComponentClassName="requerimientoTableAdapter" Name="requerimiento" UserDataComponentName="requerimientoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PRUEBAENEConnectionString (Settings)" DbObjectName="PRUEBAENE.dbo.requerimiento" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tipo_req FROM dbo.requerimiento</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tipo_req" DataSetColumn="tipo_req" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PRUEBAENEDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="PRUEBAENEDataSet" msprop:Generator_DataSetName="PRUEBAENEDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="requerimiento" msprop:Generator_RowEvHandlerName="requerimientoRowChangeEventHandler" msprop:Generator_RowDeletedName="requerimientoRowDeleted" msprop:Generator_RowDeletingName="requerimientoRowDeleting" msprop:Generator_RowEvArgName="requerimientoRowChangeEvent" msprop:Generator_TablePropName="requerimiento" msprop:Generator_RowChangedName="requerimientoRowChanged" msprop:Generator_RowChangingName="requerimientoRowChanging" msprop:Generator_TableClassName="requerimientoDataTable" msprop:Generator_RowClassName="requerimientoRow" msprop:Generator_TableVarName="tablerequerimiento" msprop:Generator_UserTableName="requerimiento">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipo_req" msprop:Generator_ColumnPropNameInRow="tipo_req" msprop:Generator_ColumnPropNameInTable="tipo_reqColumn" msprop:Generator_ColumnVarNameInTable="columntipo_req" msprop:Generator_UserColumnName="tipo_req" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

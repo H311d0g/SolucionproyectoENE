@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74B67339-9911-4774-9B24-79A77E67D73A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proyectoENE</RootNamespace>
+    <AssemblyName>proyectoENE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication.Designer.cs">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listar Requerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listar Requerimiento.Designer.cs">
+      <DependentUpon>Listar Requerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PRUEBAENEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAENEDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRUEBAENEDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Registro Requerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Requerimiento.Designer.cs">
+      <DependentUpon>Registro Requerimiento.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authentication.resx">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar Requerimiento.resx">
+      <DependentUpon>Listar Requerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registro Requerimiento.resx">
+      <DependentUpon>Registro Requerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="PRUEBAENEDataSet.xsc">
+      <DependentUpon>PRUEBAENEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet.xss">
+      <DependentUpon>PRUEBAENEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet1.xsc">
+      <DependentUpon>PRUEBAENEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet1.xss">
+      <DependentUpon>PRUEBAENEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet2.xsc">
+      <DependentUpon>PRUEBAENEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet2.xss">
+      <DependentUpon>PRUEBAENEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet3.xsc">
+      <DependentUpon>PRUEBAENEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet3.xss">
+      <DependentUpon>PRUEBAENEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet4.xsc">
+      <DependentUpon>PRUEBAENEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet4.xss">
+      <DependentUpon>PRUEBAENEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet5.xsc">
+      <DependentUpon>PRUEBAENEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet5.xss">
+      <DependentUpon>PRUEBAENEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet6.xsc">
+      <DependentUpon>PRUEBAENEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet6.xss">
+      <DependentUpon>PRUEBAENEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet7.xsc">
+      <DependentUpon>PRUEBAENEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PRUEBAENEDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRUEBAENEDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRUEBAENEDataSet7.xss">
+      <DependentUpon>PRUEBAENEDataSet7.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{dad6bc7a-d112-4db7-9a6f-6ae87a615f16}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{58b63dbe-494f-4d9d-a0d3-740d540f5f8f}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
